@@ -1,0 +1,28 @@
+#ifndef __PARAMETERS_H
+#define __PARAMETERS_H
+#include "Consts.h"
+
+// Map, contain the representation of the environment from the perspective of the robot
+class Parameters
+{
+public:
+    const int treshold;//This variable limits a number of distance scanner data
+    double worldhistangle[360][400];//This contains refrence map data worldhistangle[0<=angle<360][No];
+    double posx[400],posy[400],posz[400],state1[400];//These are corresponding data:position of x axis,position of y axis,position of z axis(always zero) and state each cell which are in the refrence map  
+    double histangle[360];//This contains distance scaner data
+    int worldhistcount;//Total number of rows which are in the refrence map
+    int Destx,Desty;//Goal positions
+    int timer;//Counter of controller (timer will increase in each call control_step function
+    Parameters();//Constructor
+    bool goToDest;//If it is true ,it means robot is ready to move forward destination
+
+private:
+
+	/*Map();
+	int test3();
+	void computeGradientFromDestination(int destX, int destY);
+	private:
+	void updateGradientCell(int cellX, int cellY);*/
+};
+
+#endif

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebaeventlogger.dir/eventlogger.cpp.o  -o asebaeventlogger -rdynamic ../libasebacore.a -lqwt-qt4 -lQtGui -lQtCore /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebadummynode.dir/dummynode.cpp.o CMakeFiles/asebadummynode.dir/dummynode_description.c.o  -o asebadummynode -rdynamic ../../libasebavmbuffer.a ../../libasebavm.a ../../libasebacore.a /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

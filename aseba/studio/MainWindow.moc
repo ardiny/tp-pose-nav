@@ -1,0 +1,768 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'MainWindow.h'
+**
+** Created: Fri Mar 8 20:43:08 2013
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../../aseba/studio/MainWindow.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'MainWindow.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.3. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_Aseba__CompilationLogDialog[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       1,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      29,   28,   28,   28, 0x05,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__CompilationLogDialog[] = {
+    "Aseba::CompilationLogDialog\0\0hidden()\0"
+};
+
+void Aseba::CompilationLogDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        CompilationLogDialog *_t = static_cast<CompilationLogDialog *>(_o);
+        switch (_id) {
+        case 0: _t->hidden(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::CompilationLogDialog::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::CompilationLogDialog::staticMetaObject = {
+    { &QTextEdit::staticMetaObject, qt_meta_stringdata_Aseba__CompilationLogDialog,
+      qt_meta_data_Aseba__CompilationLogDialog, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::CompilationLogDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::CompilationLogDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::CompilationLogDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__CompilationLogDialog))
+        return static_cast<void*>(const_cast< CompilationLogDialog*>(this));
+    return QTextEdit::qt_metacast(_clname);
+}
+
+int Aseba::CompilationLogDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QTextEdit::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::CompilationLogDialog::hidden()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+static const uint qt_meta_data_Aseba__EditorsPlotsTabWidget[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       4,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      36,   30,   29,   29, 0x0a,
+      60,   29,   29,   29, 0x2a,
+      84,   81,   29,   29, 0x09,
+     113,   30,   29,   29, 0x09,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__EditorsPlotsTabWidget[] = {
+    "Aseba::EditorsPlotsTabWidget\0\0index\0"
+    "removeAndDeleteTab(int)\0removeAndDeleteTab()\0"
+    ",,\0vmMemoryResized(int,int,int)\0"
+    "tabChanged(int)\0"
+};
+
+void Aseba::EditorsPlotsTabWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        EditorsPlotsTabWidget *_t = static_cast<EditorsPlotsTabWidget *>(_o);
+        switch (_id) {
+        case 0: _t->removeAndDeleteTab((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->removeAndDeleteTab(); break;
+        case 2: _t->vmMemoryResized((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 3: _t->tabChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData Aseba::EditorsPlotsTabWidget::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::EditorsPlotsTabWidget::staticMetaObject = {
+    { &QTabWidget::staticMetaObject, qt_meta_stringdata_Aseba__EditorsPlotsTabWidget,
+      qt_meta_data_Aseba__EditorsPlotsTabWidget, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::EditorsPlotsTabWidget::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::EditorsPlotsTabWidget::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::EditorsPlotsTabWidget::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__EditorsPlotsTabWidget))
+        return static_cast<void*>(const_cast< EditorsPlotsTabWidget*>(this));
+    return QTabWidget::qt_metacast(_clname);
+}
+
+int Aseba::EditorsPlotsTabWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QTabWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 4)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 4;
+    }
+    return _id;
+}
+static const uint qt_meta_data_Aseba__AbsentNodeTab[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__AbsentNodeTab[] = {
+    "Aseba::AbsentNodeTab\0"
+};
+
+void Aseba::AbsentNodeTab::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::AbsentNodeTab::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::AbsentNodeTab::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_Aseba__AbsentNodeTab,
+      qt_meta_data_Aseba__AbsentNodeTab, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::AbsentNodeTab::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::AbsentNodeTab::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::AbsentNodeTab::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__AbsentNodeTab))
+        return static_cast<void*>(const_cast< AbsentNodeTab*>(this));
+    if (!strcmp(_clname, "ScriptTab"))
+        return static_cast< ScriptTab*>(const_cast< AbsentNodeTab*>(this));
+    return QWidget::qt_metacast(_clname);
+}
+
+int Aseba::AbsentNodeTab::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
+}
+static const uint qt_meta_data_Aseba__NodeTab[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      32,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      16,   15,   15,   15, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+      45,   15,   15,   15, 0x0a,
+      76,   68,   15,   15, 0x0a,
+     112,   15,   15,   15, 0x09,
+     127,   15,   15,   15, 0x09,
+     141,   15,   15,   15, 0x09,
+     163,   15,   15,   15, 0x09,
+     177,   15,   15,   15, 0x09,
+     206,  200,   15,   15, 0x09,
+     236,   15,   15,   15, 0x09,
+     252,   15,   15,   15, 0x09,
+     261,   15,   15,   15, 0x09,
+     278,  276,   15,   15, 0x09,
+     322,   15,   15,   15, 0x09,
+     354,   15,   15,   15, 0x09,
+     377,   15,   15,   15, 0x09,
+     389,   15,   15,   15, 0x09,
+     410,   15,   15,   15, 0x09,
+     439,  434,   15,   15, 0x09,
+     458,  434,   15,   15, 0x09,
+     490,  480,   15,   15, 0x09,
+     522,   15,   15,   15, 0x09,
+     536,   15,   15,   15, 0x09,
+     553,  548,   15,   15, 0x09,
+     573,  548,   15,   15, 0x09,
+     595,   15,   15,   15, 0x09,
+     618,  548,   15,   15, 0x09,
+     649,  644,   15,   15, 0x09,
+     706,  693,   15,   15, 0x09,
+     737,   15,   15,   15, 0x09,
+     752,   15,   15,   15, 0x09,
+     767,   15,   15,   15, 0x09,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__NodeTab[] = {
+    "Aseba::NodeTab\0\0uploadReadynessChanged(bool)\0"
+    "clearExecutionErrors()\0context\0"
+    "refreshCompleterModel(LocalContext)\0"
+    "resetClicked()\0loadClicked()\0"
+    "runInterruptClicked()\0nextClicked()\0"
+    "refreshMemoryClicked()\0state\0"
+    "autoRefreshMemoryClicked(int)\0"
+    "writeBytecode()\0reboot()\0saveBytecode()\0"
+    ",\0setVariableValues(uint,VariablesDataVector)\0"
+    "insertVariableName(QModelIndex)\0"
+    "editorContentChanged()\0recompile()\0"
+    "markTargetUnsynced()\0keywordClicked(QString)\0"
+    "show\0showKeywords(bool)\0showMemoryUsage(bool)\0"
+    "code,line\0displayCode(QList<QString>,int)\0"
+    "cursorMoved()\0goToError()\0line\0"
+    "setBreakpoint(uint)\0clearBreakpoint(uint)\0"
+    "breakpointClearedAll()\0executionPosChanged(uint)\0"
+    "mode\0executionModeChanged(Target::ExecutionMode)\0"
+    "line,success\0breakpointSetResult(uint,bool)\0"
+    "closePlugins()\0updateHidden()\0"
+    "compilationCompleted()\0"
+};
+
+void Aseba::NodeTab::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        NodeTab *_t = static_cast<NodeTab *>(_o);
+        switch (_id) {
+        case 0: _t->uploadReadynessChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 1: _t->clearExecutionErrors(); break;
+        case 2: _t->refreshCompleterModel((*reinterpret_cast< LocalContext(*)>(_a[1]))); break;
+        case 3: _t->resetClicked(); break;
+        case 4: _t->loadClicked(); break;
+        case 5: _t->runInterruptClicked(); break;
+        case 6: _t->nextClicked(); break;
+        case 7: _t->refreshMemoryClicked(); break;
+        case 8: _t->autoRefreshMemoryClicked((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 9: _t->writeBytecode(); break;
+        case 10: _t->reboot(); break;
+        case 11: _t->saveBytecode(); break;
+        case 12: _t->setVariableValues((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const VariablesDataVector(*)>(_a[2]))); break;
+        case 13: _t->insertVariableName((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 14: _t->editorContentChanged(); break;
+        case 15: _t->recompile(); break;
+        case 16: _t->markTargetUnsynced(); break;
+        case 17: _t->keywordClicked((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 18: _t->showKeywords((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 19: _t->showMemoryUsage((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 20: _t->displayCode((*reinterpret_cast< QList<QString>(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 21: _t->cursorMoved(); break;
+        case 22: _t->goToError(); break;
+        case 23: _t->setBreakpoint((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 24: _t->clearBreakpoint((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 25: _t->breakpointClearedAll(); break;
+        case 26: _t->executionPosChanged((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 27: _t->executionModeChanged((*reinterpret_cast< Target::ExecutionMode(*)>(_a[1]))); break;
+        case 28: _t->breakpointSetResult((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
+        case 29: _t->closePlugins(); break;
+        case 30: _t->updateHidden(); break;
+        case 31: _t->compilationCompleted(); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData Aseba::NodeTab::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::NodeTab::staticMetaObject = {
+    { &QSplitter::staticMetaObject, qt_meta_stringdata_Aseba__NodeTab,
+      qt_meta_data_Aseba__NodeTab, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::NodeTab::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::NodeTab::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::NodeTab::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__NodeTab))
+        return static_cast<void*>(const_cast< NodeTab*>(this));
+    if (!strcmp(_clname, "ScriptTab"))
+        return static_cast< ScriptTab*>(const_cast< NodeTab*>(this));
+    if (!strcmp(_clname, "VariableListener"))
+        return static_cast< VariableListener*>(const_cast< NodeTab*>(this));
+    return QSplitter::qt_metacast(_clname);
+}
+
+int Aseba::NodeTab::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QSplitter::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 32)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 32;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::NodeTab::uploadReadynessChanged(bool _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+static const uint qt_meta_data_Aseba__NewNamedValueDialog[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      28,   27,   27,   27, 0x09,
+      37,   27,   27,   27, 0x09,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__NewNamedValueDialog[] = {
+    "Aseba::NewNamedValueDialog\0\0okSlot()\0"
+    "cancelSlot()\0"
+};
+
+void Aseba::NewNamedValueDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        NewNamedValueDialog *_t = static_cast<NewNamedValueDialog *>(_o);
+        switch (_id) {
+        case 0: _t->okSlot(); break;
+        case 1: _t->cancelSlot(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::NewNamedValueDialog::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::NewNamedValueDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_Aseba__NewNamedValueDialog,
+      qt_meta_data_Aseba__NewNamedValueDialog, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::NewNamedValueDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::NewNamedValueDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::NewNamedValueDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__NewNamedValueDialog))
+        return static_cast<void*>(const_cast< NewNamedValueDialog*>(this));
+    return QDialog::qt_metacast(_clname);
+}
+
+int Aseba::NewNamedValueDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    return _id;
+}
+static const uint qt_meta_data_Aseba__MainWindow[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+      73,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      19,   18,   18,   18, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+      38,   18,   18,   18, 0x08,
+      51,   18,   46,   18, 0x08,
+      66,   61,   18,   18, 0x08,
+      84,   18,   18,   18, 0x28,
+      95,   18,   18,   18, 0x08,
+     112,   18,   46,   18, 0x08,
+     136,  119,   46,   18, 0x08,
+     154,   18,   46,   18, 0x28,
+     165,   18,   18,   18, 0x08,
+     189,   18,   18,   18, 0x08,
+     213,   18,   18,   18, 0x08,
+     223,   18,   18,   18, 0x08,
+     239,   18,   18,   18, 0x08,
+     258,   18,   18,   18, 0x08,
+     277,   18,   18,   18, 0x08,
+     304,  298,   18,   18, 0x08,
+     333,   18,   18,   18, 0x08,
+     344,   18,   18,   18, 0x08,
+     364,  359,   18,   18, 0x08,
+     381,  359,   18,   18, 0x08,
+     400,   18,   18,   18, 0x08,
+     419,   18,   18,   18, 0x08,
+     441,   18,   18,   18, 0x08,
+     451,   18,   18,   18, 0x08,
+     462,   18,   18,   18, 0x08,
+     471,   18,   18,   18, 0x08,
+     482,   18,   18,   18, 0x08,
+     492,   18,   18,   18, 0x08,
+     517,   18,   18,   18, 0x08,
+     542,   18,   18,   18, 0x08,
+     558,   18,   18,   18, 0x08,
+     570,   18,   18,   18, 0x08,
+     595,   18,   18,   18, 0x08,
+     633,   18,   18,   18, 0x08,
+     649,  645,   18,   18, 0x08,
+     691,  683,   18,   18, 0x08,
+     707,   18,   18,   18, 0x08,
+     755,  747,   18,   18, 0x08,
+     785,   18,   18,   18, 0x08,
+     816,  359,   18,   18, 0x08,
+     838,   18,   18,   18, 0x08,
+     860,   18,   18,   18, 0x08,
+     898,  885,   18,   18, 0x08,
+     918,   18,   18,   18, 0x28,
+     934,   18,   18,   18, 0x08,
+     955,   18,   18,   18, 0x08,
+     992,   18,   18,   18, 0x08,
+    1010,   18,   18,   18, 0x08,
+    1031,   18,   18,   18, 0x08,
+    1055,   18,   18,   18, 0x08,
+    1088, 1083,   18,   18, 0x08,
+    1108, 1083,   18,   18, 0x08,
+    1131,   18,   18,   18, 0x08,
+    1160, 1153,   18,   18, 0x08,
+    1192, 1184,   18,   18, 0x08,
+    1249, 1228,   18,   18, 0x08,
+    1303, 1293,   18,   18, 0x08,
+    1329, 1293,   18,   18, 0x08,
+    1379, 1361,   18,   18, 0x08,
+    1416, 1293,   18,   18, 0x08,
+    1457, 1447,   18,   18, 0x08,
+    1506, 1083,   18,   18, 0x08,
+    1563, 1542,   18,   18, 0x08,
+    1635, 1617,   18,   18, 0x08,
+    1671,   18,   18,   18, 0x08,
+    1686,   18,   18,   18, 0x08,
+    1706,   18,   18,   18, 0x08,
+    1723,   18,   18,   18, 0x08,
+    1739,   18,   18,   18, 0x08,
+    1759,   18,   18,   18, 0x08,
+    1776,   18,   18,   18, 0x08,
+    1798,   18,   18,   18, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__MainWindow[] = {
+    "Aseba::MainWindow\0\0MainWindowClosed()\0"
+    "about()\0bool\0newFile()\0path\0"
+    "openFile(QString)\0openFile()\0"
+    "openRecentFile()\0save()\0previousFileName\0"
+    "saveFile(QString)\0saveFile()\0"
+    "exportMemoriesContent()\0importMemoriesContent()\0"
+    "copyAll()\0findTriggered()\0replaceTriggered()\0"
+    "commentTriggered()\0uncommentTriggered()\0"
+    "state\0showLineNumbersChanged(bool)\0"
+    "goToLine()\0showSettings()\0show\0"
+    "showHidden(bool)\0showKeywords(bool)\0"
+    "toggleBreakpoint()\0clearAllBreakpoints()\0"
+    "loadAll()\0resetAll()\0runAll()\0pauseAll()\0"
+    "stopAll()\0clearAllExecutionError()\0"
+    "uploadReadynessChanged()\0tabChanged(int)\0"
+    "sendEvent()\0sendEventIf(QModelIndex)\0"
+    "toggleEventVisibleButton(QModelIndex)\0"
+    "plotEvent()\0pos\0eventContextMenuRequested(QPoint)\0"
+    "eventId\0plotEvent(uint)\0"
+    "logEntryDoubleClicked(QListWidgetItem*)\0"
+    "doShown\0showCompilationMessages(bool)\0"
+    "compilationMessagesWasHidden()\0"
+    "showMemoryUsage(bool)\0addEventNameClicked()\0"
+    "removeEventNameClicked()\0indexChanged\0"
+    "eventsUpdated(bool)\0eventsUpdated()\0"
+    "eventsUpdatedDirty()\0"
+    "eventsDescriptionsSelectionChanged()\0"
+    "resetStatusText()\0addConstantClicked()\0"
+    "removeConstantClicked()\0"
+    "constantsSelectionChanged()\0node\0"
+    "nodeConnected(uint)\0nodeDisconnected(uint)\0"
+    "networkDisconnected()\0amount\0"
+    "userEventsDropped(uint)\0id,data\0"
+    "userEvent(uint,VariablesDataVector)\0"
+    "node,line,size,index\0"
+    "arrayAccessOutOfBounds(uint,uint,uint,uint)\0"
+    "node,line\0divisionByZero(uint,uint)\0"
+    "eventExecutionKilled(uint,uint)\0"
+    "node,line,message\0"
+    "nodeSpecificError(uint,uint,QString)\0"
+    "executionPosChanged(uint,uint)\0node,mode\0"
+    "executionModeChanged(uint,Target::ExecutionMode)\0"
+    "variablesMemoryEstimatedDirty(uint)\0"
+    "node,start,variables\0"
+    "variablesMemoryChanged(uint,uint,VariablesDataVector)\0"
+    "node,line,success\0breakpointSetResult(uint,uint,bool)\0"
+    "recompileAll()\0writeAllBytecodes()\0"
+    "rebootAllNodes()\0sourceChanged()\0"
+    "updateWindowTitle()\0showUserManual()\0"
+    "openToUrlFromAction()\0applySettings()\0"
+};
+
+void Aseba::MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        MainWindow *_t = static_cast<MainWindow *>(_o);
+        switch (_id) {
+        case 0: _t->MainWindowClosed(); break;
+        case 1: _t->about(); break;
+        case 2: { bool _r = _t->newFile();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 3: _t->openFile((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 4: _t->openFile(); break;
+        case 5: _t->openRecentFile(); break;
+        case 6: { bool _r = _t->save();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 7: { bool _r = _t->saveFile((*reinterpret_cast< const QString(*)>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 8: { bool _r = _t->saveFile();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 9: _t->exportMemoriesContent(); break;
+        case 10: _t->importMemoriesContent(); break;
+        case 11: _t->copyAll(); break;
+        case 12: _t->findTriggered(); break;
+        case 13: _t->replaceTriggered(); break;
+        case 14: _t->commentTriggered(); break;
+        case 15: _t->uncommentTriggered(); break;
+        case 16: _t->showLineNumbersChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 17: _t->goToLine(); break;
+        case 18: _t->showSettings(); break;
+        case 19: _t->showHidden((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 20: _t->showKeywords((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 21: _t->toggleBreakpoint(); break;
+        case 22: _t->clearAllBreakpoints(); break;
+        case 23: _t->loadAll(); break;
+        case 24: _t->resetAll(); break;
+        case 25: _t->runAll(); break;
+        case 26: _t->pauseAll(); break;
+        case 27: _t->stopAll(); break;
+        case 28: _t->clearAllExecutionError(); break;
+        case 29: _t->uploadReadynessChanged(); break;
+        case 30: _t->tabChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 31: _t->sendEvent(); break;
+        case 32: _t->sendEventIf((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 33: _t->toggleEventVisibleButton((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 34: _t->plotEvent(); break;
+        case 35: _t->eventContextMenuRequested((*reinterpret_cast< const QPoint(*)>(_a[1]))); break;
+        case 36: _t->plotEvent((*reinterpret_cast< const uint(*)>(_a[1]))); break;
+        case 37: _t->logEntryDoubleClicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 38: _t->showCompilationMessages((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 39: _t->compilationMessagesWasHidden(); break;
+        case 40: _t->showMemoryUsage((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 41: _t->addEventNameClicked(); break;
+        case 42: _t->removeEventNameClicked(); break;
+        case 43: _t->eventsUpdated((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 44: _t->eventsUpdated(); break;
+        case 45: _t->eventsUpdatedDirty(); break;
+        case 46: _t->eventsDescriptionsSelectionChanged(); break;
+        case 47: _t->resetStatusText(); break;
+        case 48: _t->addConstantClicked(); break;
+        case 49: _t->removeConstantClicked(); break;
+        case 50: _t->constantsSelectionChanged(); break;
+        case 51: _t->nodeConnected((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 52: _t->nodeDisconnected((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 53: _t->networkDisconnected(); break;
+        case 54: _t->userEventsDropped((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 55: _t->userEvent((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const VariablesDataVector(*)>(_a[2]))); break;
+        case 56: _t->arrayAccessOutOfBounds((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2])),(*reinterpret_cast< uint(*)>(_a[3])),(*reinterpret_cast< uint(*)>(_a[4]))); break;
+        case 57: _t->divisionByZero((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2]))); break;
+        case 58: _t->eventExecutionKilled((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2]))); break;
+        case 59: _t->nodeSpecificError((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 60: _t->executionPosChanged((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2]))); break;
+        case 61: _t->executionModeChanged((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< Target::ExecutionMode(*)>(_a[2]))); break;
+        case 62: _t->variablesMemoryEstimatedDirty((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 63: _t->variablesMemoryChanged((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2])),(*reinterpret_cast< const VariablesDataVector(*)>(_a[3]))); break;
+        case 64: _t->breakpointSetResult((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< uint(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3]))); break;
+        case 65: _t->recompileAll(); break;
+        case 66: _t->writeAllBytecodes(); break;
+        case 67: _t->rebootAllNodes(); break;
+        case 68: _t->sourceChanged(); break;
+        case 69: _t->updateWindowTitle(); break;
+        case 70: _t->showUserManual(); break;
+        case 71: _t->openToUrlFromAction(); break;
+        case 72: _t->applySettings(); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData Aseba::MainWindow::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::MainWindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_Aseba__MainWindow,
+      qt_meta_data_Aseba__MainWindow, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::MainWindow::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::MainWindow::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::MainWindow::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__MainWindow))
+        return static_cast<void*>(const_cast< MainWindow*>(this));
+    return QMainWindow::qt_metacast(_clname);
+}
+
+int Aseba::MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 73)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 73;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::MainWindow::MainWindowClosed()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+QT_END_MOC_NAMESPACE

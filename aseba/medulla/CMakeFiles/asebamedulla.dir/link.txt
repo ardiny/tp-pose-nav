@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebamedulla.dir/medulla.cpp.o  -o asebamedulla -rdynamic ../libasebacompiler.a ../libasebacore.a -lQtDBus -lQtXml -lQtCore /home/epfl/Downloads/aseba/build-dashel/libdashel.a -ludev /home/epfl/Downloads/aseba/build-dashel/libdashel.a -ludev 

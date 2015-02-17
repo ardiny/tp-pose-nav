@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/admin1/install/aseba/aseba/tests/../vm/../common/types.h
+stdlib.h
+-
+
+/home/admin1/install/aseba/aseba/tests/../vm/natives.h
+../common/types.h
+/home/admin1/install/aseba/aseba/tests/../vm/../common/types.h
+vm.h
+/home/admin1/install/aseba/aseba/tests/../vm/vm.h
+
+/home/admin1/install/aseba/aseba/tests/../vm/vm.h
+../common/types.h
+/home/admin1/install/aseba/aseba/tests/../vm/../common/types.h
+
+/home/admin1/install/aseba/aseba/tests/aseba-test-natives-count.cpp
+../vm/natives.h
+/home/admin1/install/aseba/aseba/tests/../vm/natives.h
+

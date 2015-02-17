@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/thymioflasher.dir/ThymioFlasher.cpp.o CMakeFiles/thymioflasher.dir/qrc_thymioflasher.cxx.o  -o thymioflasher -rdynamic ../libasebacore.a -lQtGui -lQtCore /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

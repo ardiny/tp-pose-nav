@@ -1,0 +1,243 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'challenge.h'
+**
+** Created: Fri Mar 8 20:44:10 2013
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../../../aseba/targets/challenge/challenge.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'challenge.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.3. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_Enki__ChallengeViewer[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       3,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      23,   22,   22,   22, 0x0a,
+      37,   22,   22,   22, 0x0a,
+      57,   51,   22,   22, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Enki__ChallengeViewer[] = {
+    "Enki::ChallengeViewer\0\0addNewRobot()\0"
+    "removeRobot()\0state\0autoCameraStateChanged(bool)\0"
+};
+
+void Enki::ChallengeViewer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ChallengeViewer *_t = static_cast<ChallengeViewer *>(_o);
+        switch (_id) {
+        case 0: _t->addNewRobot(); break;
+        case 1: _t->removeRobot(); break;
+        case 2: _t->autoCameraStateChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData Enki::ChallengeViewer::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Enki::ChallengeViewer::staticMetaObject = {
+    { &ViewerWidget::staticMetaObject, qt_meta_stringdata_Enki__ChallengeViewer,
+      qt_meta_data_Enki__ChallengeViewer, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Enki::ChallengeViewer::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Enki::ChallengeViewer::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Enki::ChallengeViewer::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Enki__ChallengeViewer))
+        return static_cast<void*>(const_cast< ChallengeViewer*>(this));
+    return ViewerWidget::qt_metacast(_clname);
+}
+
+int Enki::ChallengeViewer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = ViewerWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    }
+    return _id;
+}
+static const uint qt_meta_data_Enki__ChallengeApplication[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      28,   27,   27,   27, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+      54,   43,   27,   27, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Enki__ChallengeApplication[] = {
+    "Enki::ChallengeApplication\0\0windowClosed()\0"
+    "fullScreen\0fullScreenStateChanged(bool)\0"
+};
+
+void Enki::ChallengeApplication::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ChallengeApplication *_t = static_cast<ChallengeApplication *>(_o);
+        switch (_id) {
+        case 0: _t->windowClosed(); break;
+        case 1: _t->fullScreenStateChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData Enki::ChallengeApplication::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Enki::ChallengeApplication::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_Enki__ChallengeApplication,
+      qt_meta_data_Enki__ChallengeApplication, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Enki::ChallengeApplication::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Enki::ChallengeApplication::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Enki::ChallengeApplication::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Enki__ChallengeApplication))
+        return static_cast<void*>(const_cast< ChallengeApplication*>(this));
+    return QWidget::qt_metacast(_clname);
+}
+
+int Enki::ChallengeApplication::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Enki::ChallengeApplication::windowClosed()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+static const uint qt_meta_data_LanguageSelectionDialog[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_LanguageSelectionDialog[] = {
+    "LanguageSelectionDialog\0"
+};
+
+void LanguageSelectionDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData LanguageSelectionDialog::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject LanguageSelectionDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_LanguageSelectionDialog,
+      qt_meta_data_LanguageSelectionDialog, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &LanguageSelectionDialog::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *LanguageSelectionDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *LanguageSelectionDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_LanguageSelectionDialog))
+        return static_cast<void*>(const_cast< LanguageSelectionDialog*>(this));
+    return QDialog::qt_metacast(_clname);
+}
+
+int LanguageSelectionDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
+}
+QT_END_MOC_NAMESPACE

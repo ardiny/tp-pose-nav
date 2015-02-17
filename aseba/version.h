@@ -1,0 +1,1 @@
+#define ASEBA_BUILD_VERSION "git-23b3d48"

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebaplay.dir/play.cpp.o  -o asebaplay -rdynamic ../libasebacore.a /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

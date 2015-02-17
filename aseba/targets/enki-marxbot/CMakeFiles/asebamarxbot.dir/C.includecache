@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/../common/types.h
+stdlib.h
+-
+
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/natives.h
+../common/types.h
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/../common/types.h
+vm.h
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/vm.h
+
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/vm.h
+../common/types.h
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/../common/types.h
+
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/AsebaMarxbot-vm-descriptions.c
+../../vm/natives.h
+/home/admin1/install/aseba/aseba/targets/enki-marxbot/../../vm/natives.h
+

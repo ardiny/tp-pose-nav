@@ -1,0 +1,3 @@
+/home/admin1/tp/marXbot/argos/build/controllers/marXbot/CMakeFiles/marXbot.dir
+/home/admin1/tp/marXbot/argos/build/controllers/marXbot/CMakeFiles/marXbottest.dir
+/home/admin1/tp/marXbot/argos/build/controllers/marXbot/CMakeFiles/offlinemap.dir

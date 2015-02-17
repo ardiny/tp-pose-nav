@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/aseba-test-natives-count.dir/aseba-test-natives-count.cpp.o  -o aseba-test-natives-count -rdynamic ../libasebavm.a 

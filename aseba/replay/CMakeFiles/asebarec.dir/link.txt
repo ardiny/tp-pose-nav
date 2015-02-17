@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebarec.dir/rec.cpp.o  -o asebarec -rdynamic ../libasebacore.a /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

@@ -1,0 +1,481 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'ThymioButtons.h'
+**
+** Created: Fri Mar 8 20:43:09 2013
+**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../../aseba/studio/plugins/ThymioVPL/ThymioButtons.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'ThymioButtons.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.3. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_Aseba__ThymioClickableButton[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       1,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      30,   29,   29,   29, 0x05,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioClickableButton[] = {
+    "Aseba::ThymioClickableButton\0\0"
+    "stateChanged()\0"
+};
+
+void Aseba::ThymioClickableButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ThymioClickableButton *_t = static_cast<ThymioClickableButton *>(_o);
+        switch (_id) {
+        case 0: _t->stateChanged(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioClickableButton::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioClickableButton::staticMetaObject = {
+    { &QGraphicsObject::staticMetaObject, qt_meta_stringdata_Aseba__ThymioClickableButton,
+      qt_meta_data_Aseba__ThymioClickableButton, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioClickableButton::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioClickableButton::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioClickableButton::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioClickableButton))
+        return static_cast<void*>(const_cast< ThymioClickableButton*>(this));
+    return QGraphicsObject::qt_metacast(_clname);
+}
+
+int Aseba::ThymioClickableButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QGraphicsObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::ThymioClickableButton::stateChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+static const uint qt_meta_data_Aseba__ThymioButton[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      21,   20,   20,   20, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+      36,   20,   20,   20, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioButton[] = {
+    "Aseba::ThymioButton\0\0stateChanged()\0"
+    "updateIRButton()\0"
+};
+
+void Aseba::ThymioButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ThymioButton *_t = static_cast<ThymioButton *>(_o);
+        switch (_id) {
+        case 0: _t->stateChanged(); break;
+        case 1: _t->updateIRButton(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioButton::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioButton::staticMetaObject = {
+    { &QGraphicsSvgItem::staticMetaObject, qt_meta_stringdata_Aseba__ThymioButton,
+      qt_meta_data_Aseba__ThymioButton, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioButton::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioButton::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioButton::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioButton))
+        return static_cast<void*>(const_cast< ThymioButton*>(this));
+    return QGraphicsSvgItem::qt_metacast(_clname);
+}
+
+int Aseba::ThymioButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QGraphicsSvgItem::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::ThymioButton::stateChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+static const uint qt_meta_data_Aseba__ThymioButtonSet[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      24,   23,   23,   23, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+      40,   23,   23,   23, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioButtonSet[] = {
+    "Aseba::ThymioButtonSet\0\0buttonUpdated()\0"
+    "stateChanged()\0"
+};
+
+void Aseba::ThymioButtonSet::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ThymioButtonSet *_t = static_cast<ThymioButtonSet *>(_o);
+        switch (_id) {
+        case 0: _t->buttonUpdated(); break;
+        case 1: _t->stateChanged(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioButtonSet::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioButtonSet::staticMetaObject = {
+    { &QGraphicsObject::staticMetaObject, qt_meta_stringdata_Aseba__ThymioButtonSet,
+      qt_meta_data_Aseba__ThymioButtonSet, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioButtonSet::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioButtonSet::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioButtonSet::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioButtonSet))
+        return static_cast<void*>(const_cast< ThymioButtonSet*>(this));
+    return QGraphicsObject::qt_metacast(_clname);
+}
+
+int Aseba::ThymioButtonSet::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QGraphicsObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void Aseba::ThymioButtonSet::buttonUpdated()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+static const uint qt_meta_data_Aseba__ThymioPushButton[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioPushButton[] = {
+    "Aseba::ThymioPushButton\0"
+};
+
+void Aseba::ThymioPushButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioPushButton::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioPushButton::staticMetaObject = {
+    { &QPushButton::staticMetaObject, qt_meta_stringdata_Aseba__ThymioPushButton,
+      qt_meta_data_Aseba__ThymioPushButton, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioPushButton::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioPushButton::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioPushButton::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioPushButton))
+        return static_cast<void*>(const_cast< ThymioPushButton*>(this));
+    return QPushButton::qt_metacast(_clname);
+}
+
+int Aseba::ThymioPushButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QPushButton::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
+}
+static const uint qt_meta_data_Aseba__ThymioMoveAction[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       1,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      25,   24,   24,   24, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioMoveAction[] = {
+    "Aseba::ThymioMoveAction\0\0valueChangeDetected()\0"
+};
+
+void Aseba::ThymioMoveAction::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ThymioMoveAction *_t = static_cast<ThymioMoveAction *>(_o);
+        switch (_id) {
+        case 0: _t->valueChangeDetected(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioMoveAction::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioMoveAction::staticMetaObject = {
+    { &ThymioButton::staticMetaObject, qt_meta_stringdata_Aseba__ThymioMoveAction,
+      qt_meta_data_Aseba__ThymioMoveAction, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioMoveAction::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioMoveAction::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioMoveAction::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioMoveAction))
+        return static_cast<void*>(const_cast< ThymioMoveAction*>(this));
+    return ThymioButton::qt_metacast(_clname);
+}
+
+int Aseba::ThymioMoveAction::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = ThymioButton::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    return _id;
+}
+static const uint qt_meta_data_Aseba__ThymioColorAction[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       1,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+      26,   25,   25,   25, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_Aseba__ThymioColorAction[] = {
+    "Aseba::ThymioColorAction\0\0"
+    "valueChangeDetected()\0"
+};
+
+void Aseba::ThymioColorAction::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        ThymioColorAction *_t = static_cast<ThymioColorAction *>(_o);
+        switch (_id) {
+        case 0: _t->valueChangeDetected(); break;
+        default: ;
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObjectExtraData Aseba::ThymioColorAction::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject Aseba::ThymioColorAction::staticMetaObject = {
+    { &ThymioButton::staticMetaObject, qt_meta_stringdata_Aseba__ThymioColorAction,
+      qt_meta_data_Aseba__ThymioColorAction, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &Aseba::ThymioColorAction::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *Aseba::ThymioColorAction::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *Aseba::ThymioColorAction::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_Aseba__ThymioColorAction))
+        return static_cast<void*>(const_cast< ThymioColorAction*>(this));
+    return ThymioButton::qt_metacast(_clname);
+}
+
+int Aseba::ThymioColorAction::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = ThymioButton::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    return _id;
+}
+QT_END_MOC_NAMESPACE

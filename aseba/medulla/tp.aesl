@@ -1,0 +1,192 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+<event size="1" name="joy_axis0"/>
+<event size="1" name="joy_axis1"/>
+<event size="1" name="joy_axis2"/>
+<event size="1" name="joy_axis3"/>
+<event size="1" name="joy_axis4"/>
+<event size="1" name="joy_hat"/>
+<event size="0" name="joy_button0"/>
+<event size="0" name="joy_button1"/>
+<event size="0" name="joy_button2"/>
+<event size="0" name="joy_button3"/>
+<event size="0" name="joy_button4"/>
+<event size="0" name="joy_button5"/>
+<event size="0" name="joy_button6"/>
+<event size="0" name="joy_button7"/>
+<event size="0" name="joy_button8"/>
+<event size="2" name="set_robot_speed"/>
+<event size="1" name="set_scanner_speed"/>
+<event size="1" name="set_scanner_pos"/>
+<event size="1" name="set_scanner_led"/>
+<event size="0" name="start"/>
+<event size="0" name="stop"/>
+<event size="9" name="sv"/>
+<event size="24" name="prx"/>
+
+
+<!--list of constants-->
+<constant value="60" name="MAX_SPEED"/>
+
+
+<!--show keywords state-->
+<keywords flag="true"/>
+
+
+<!--source code of node treel-left-->
+<node name="treel-left">var x_speed var y_speed
+motor.pid.enable = 2
+
+sub update_speed
+motor.pid.target_speed = y_speed - x_speed
+
+onevent joy_axis1
+call math.muldiv(x_speed, event.args[0], MAX_SPEED, 32767)
+callsub update_speed
+
+onevent joy_axis3
+call math.muldiv(y_speed, event.args[0], MAX_SPEED, 32767)
+callsub update_speed
+
+onevent set_robot_speed
+motor.pid.target_speed = event.args[0]
+
+onevent stop
+motor.pid.target_speed = 0</node>
+
+
+<!--source code of node treel-right-->
+<node name="treel-right">var x_speed var y_speed
+motor.pid.enable = 2
+
+sub update_speed
+motor.pid.target_speed = - y_speed - x_speed
+
+onevent joy_axis1
+call math.muldiv(x_speed, event.args[0], MAX_SPEED, 32767)
+callsub update_speed
+
+onevent joy_axis3
+call math.muldiv(y_speed, event.args[0], MAX_SPEED, 32767)
+callsub update_speed
+
+onevent set_robot_speed
+motor.pid.target_speed = event.args[1]
+
+onevent stop
+motor.pid.target_speed = 0</node>
+
+
+<!--source code of node base-sensors-->
+<node name="base-sensors">var a
+sensors.period=100
+onevent sensors.updated
+a=proximity.corrected[2]
+#emit prx proximity.delta</node>
+
+
+<!--source code of node sensor-turret-->
+<node name="sensor-turret">var foo
+var pos
+var buf[9]
+var crc = 0
+var led_number = 3
+var data_recovered = 0
+var data_lost = 0
+var undervoltage_occurances = 0
+call sharp.start()
+call sharp.set_speed(30)
+# init
+
+call math.fill(sharp._led, led_number)
+
+
+# subs
+
+sub sub_set_pos
+if(pos >= 360) then
+	pos = 0
+end
+if(pos &lt; 0) then
+	pos = 0
+end
+call math.muldiv(foo, pos , 6912, 360)
+motor._command = -foo - 1
+call sharp.send_conf()
+
+
+# events
+
+onevent set_scanner_speed
+motor._command = event.args[0]  + 16384
+call sharp.send_conf()
+
+onevent set_scanner_pos
+pos = event.args[0]
+callsub sub_set_pos
+
+onevent set_scanner_led
+
+call math.fill(sharp._led, led_number)
+
+onevent sharp.updated
+call math.copy(buf[0:3], sharp.value)
+call math.copy(buf[4:7], sharp.dist)
+buf[8] = sharp.angle
+emit sv buf
+
+onevent start
+call sharp.start()
+
+onevent joy_button0
+if event.args[0] == 1 then
+	call sharp.start()
+end
+
+onevent stop
+call sharp.stop()
+
+onevent joy_button1
+if event.args[0] == 1 then
+	call sharp.stop()
+end
+
+# IR and induction error counters
+
+onevent _rx_1_crc
+data_recovered = data_recovered + 1
+
+onevent _rx_2_crc
+data_recovered = data_recovered + 1
+
+onevent _rx_12_crc
+data_lost = data_lost + 1
+
+onevent _rx_timeout
+data_lost = data_lost + 1
+
+onevent undervoltage
+undervoltage_occurances = undervoltage_occurances + 1</node>
+
+
+<!--source code of node gripper-sensor-->
+<node name="gripper-sensor"></node>
+
+
+<!--source code of node griper-led-->
+<node name="griper-led"></node>
+
+
+<!--source code of node rab2-->
+<node name="rab2"></node>
+
+
+<!--source code of node led-rgb-->
+<node name="led-rgb">call led.rgb(0, 0, 0)
+</node>
+
+
+</network>

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g    CMakeFiles/asebatest.dir/asebatest.cpp.o  -o asebatest -rdynamic ../libasebacompiler.a ../libasebavm.a ../libasebacore.a /home/admin1/install/aseba/build-dashel/libdashel.a -ludev /home/admin1/install/aseba/build-dashel/libdashel.a -ludev 

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/admin1/install/aseba/aseba/targets/dummy/../../common/productids.h
+
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/../common/types.h
+stdlib.h
+-
+
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/natives.h
+../common/types.h
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/../common/types.h
+vm.h
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/vm.h
+
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/vm.h
+../common/types.h
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/../common/types.h
+
+/home/admin1/install/aseba/aseba/targets/dummy/dummynode_description.c
+../../vm/natives.h
+/home/admin1/install/aseba/aseba/targets/dummy/../../vm/natives.h
+../../common/productids.h
+/home/admin1/install/aseba/aseba/targets/dummy/../../common/productids.h
+
