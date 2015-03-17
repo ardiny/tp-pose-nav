@@ -27,8 +27,10 @@ int x,y,prex,prey;
 double mostProbDist=1000000;
 //replacement of sensors arrangement
 void initialize(){
-    for (int x = 0; x < 11; x++)
-        for (int y = 0; y < 6; y++)
+    int MAP_COUNTX=(int)(arenalon/arenares+1);
+    int MAP_COUNTY=(int)(arenawidth/arenares+1);
+    for (int x = 0; x < MAP_COUNTX; x++)
+        for (int y = 0; y < MAP_COUNTY; y++)
            {
             map1.gradientMap[x][y]=3;
            };
