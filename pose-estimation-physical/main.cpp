@@ -100,7 +100,9 @@ int main(int argc, char **argv){
                if (angle!=angle0)
                     counter++;
                 angle0=angle;
-
+    /////////////using proximity sensors
+    // QDBusMessage input_proximity=dbus_iface.call( "GetVariable","base-sensors","proximity.corrected");
+   //   qDebug() <<time.elapsed()<<input_proximity.arguments().value(1).toInt();
         if ((parameters.calibration_state==parameters.just_recalculate_distance)||(parameters.calibration_state==parameters.both)){
                         //qDebug() <<dbus_iface.call( "GetVariable","sensor-turret","sharp.value");
                         for(size_t i=0;i<4;i++)
