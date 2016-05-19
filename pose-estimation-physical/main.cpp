@@ -190,7 +190,13 @@ void controller(){
     ///////////////////////////
     //TODO Navigation and find Goal
     //In the Tp description file, we discussed about (Section 3.1.3) path propagation gradient algorithm, So you can access value of gradient map with following command: map1.gradientMap[x][y]
-
+ 
+ ////Please use below speed commands to send your value to the robot
+ ////Please note the robot multiply a coefficient the speed values and then convert it to  integer values , robot_speed=(int)(your_speed value*10.0/4.0) 
+  //  parameters.speedvalueleft.clear();
+  //  parameters.speedvalueright.clear();
+ //   parameters.speedvalueleft << -0;
+  //  parameters.speedvalueright << 0;
         return;
     }
 bool distance_data_update(int tresholdvalue){
